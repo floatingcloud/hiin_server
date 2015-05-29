@@ -1,0 +1,18 @@
+h1 New Event 
+
+form(method="POST", action="/addEvent")
+  p
+    label(for="eventname") eventname<br />
+    input#eventname(name="eventname")
+  p
+    label(for="description") description<br />
+    input#description(name="description")
+  p
+    label(for="location") location<br />
+    input#location(name="location")
+
+  p
+    label(for="passcode") passcode<br />
+    textarea#passcode(name="passcode")
+  p
+    input(type="submit", value="Create")

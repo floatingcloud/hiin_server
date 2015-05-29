@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  - if (isSuccess)
+   script(type='text/javascript').
+      alert('success making new event.');
+      location.href = '/chat/join/#{roomName}';
+  - else if (roomName === '')
+   script(type='text/javascript').
+      alert('fail to make event.');
+      location.href = '/chat/enter';
+  - else
+    script(type='text/javascript').
+      alert('already exist event.'); 
+      location.href = '/chat/enter';

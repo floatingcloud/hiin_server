@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  - if (isSuccess)
+    h2 Current Events 
+    p Hello! #{nickname}
+    p Make New Event
+      form(action='/chat/makeRoom', method='POST')
+        label(for='roomname') Event Name
+        input(type='text', id='roomname', name='roomname')
+        input(type='submit', value='New Event')
+   
+    ul
+      each room in roomList
+       li= room
+        input(type='button', value='enter', onclick='location.href=\'/chat/join/' + room + '\'')
+
+  - else
+    - if (nickname === '')
+         script(type='text/javascript').
+           alert('wrong name.');
+           history.go(-1);
+    - else
+        script(type='text/javascript').
+           alert('already using name.');
+           history.go(-1);

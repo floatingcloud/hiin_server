@@ -1,0 +1,21 @@
+{
+  "login": {
+    "1": "unexpected error",
+    "2": "wrong email or password",
+    "3": "password length error",
+    "4": "password confirm error",
+    "5": "alredy exist email"
+  }
+
+  "socket": {
+    "1": "send new message",
+    "2": "communitaion error"
+  }
+
+  "error": {
+    "1": "not login",
+    "2": "not friend",
+    "3": "no message",
+    "4": "not sef"
+  }
+}

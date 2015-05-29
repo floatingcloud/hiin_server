@@ -1,0 +1,20 @@
+include ../session/user
+ 
+h1 New User
+
+form(method="POST", action="/users")
+  p
+    label(for="username") Username<br />
+    input#username(name="username")
+  p
+    label(for="name") Name<br />
+    input#name(name="name")
+  p
+    label(for="password") Password<br />
+    input#name(name="password")
+
+  p
+    label(for="bio") Job<br />
+    textarea#bio(name="bio")
+  p
+    input(type="submit", value="Create")

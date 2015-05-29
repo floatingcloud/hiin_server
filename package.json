@@ -1,0 +1,30 @@
+{
+  "name": "hiin_server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+  "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.7",
+    "jade": "*",
+    "agenda": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "async": ">=0.1.22",
+    "socket.io": ">=0.8.7",
+    "bcrypt-nodejs" : "latest",
+    "nconf" : "latest",
+    "node-uuid": "~1.4.1",
+    "redis" : ">=0.10.0",
+    "connect-redis" : ">=1.4.7",
+    "formidable" : "latest",
+    "crypto" : "latest",
+    "easyimage" : "latest",
+    "connect-mongo" : "latest",
+    "hiredis" : "latest",
+    "express-session": "latest",
+    "apn": "latest",
+    "node-gcm": "latest"
+  }
+}

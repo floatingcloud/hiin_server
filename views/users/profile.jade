@@ -1,0 +1,10 @@
+include ../session/user
+
+h1= user.name
+
+h2 Job
+p= user.bio
+
+form(action="/users/" + encodeURIComponent(user.username), method="POST")
+  input(name="_method", type="hidden", value="DELETE")
+  input(type="submit", value="Delete")

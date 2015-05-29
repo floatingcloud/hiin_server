@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h2 chat room
+  form(action='/chat/enter', method='POST')
+    label(for='nickname') insert chat name 
+    input(type='text', id='nickname', name='nickname')
+    input(type='submit', value='enter')
+    script(type='text/javascript').
+      $(document).ready(function()  {
+        $('form').submit(function(e) {
+          if ($.trim($('#nickname').val()) === '') {
+          alert('insert nickname.');
+                return false;
+           }
+        });
+      });
